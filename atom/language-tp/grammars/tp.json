@@ -1,0 +1,129 @@
+{
+  "scopeName": "source.tp",
+  "fileTypes": [
+    "ls",
+    "tp"
+  ],
+  "name": "TP",
+  "patterns": [
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#operators"
+    },
+    {
+      "include": "#constants"
+    },
+    {
+      "include": "#variable-types"
+    },
+    {
+      "include": "#variable-modifiers"
+    },
+    {
+      "begin": "!",
+      "end": "\\n",
+      "name": "comment.line.tp"
+    }
+  ],
+  "repository": {
+    "keywords": {
+			"patterns": [
+				{
+					"match": "\\b(IF|THEN|ELSE|ENDIF)\\b",
+					"name": "keyword.control.tp"
+				},
+        {
+          "match": "\\b(FOR|ENDFOR)\\b",
+          "name": "keyword.control.tp"
+        },
+        {
+          "match": "\\b(SELECT)\\b",
+          "name": "keyword.control.tp"
+        },
+        {
+          "match": "\\b(JMP|LBL|ABORT|PAUSE)\\b",
+          "name": "keyword.control.tp"
+        },
+        {
+          "match": "\\b(CALL|RUN)\\b",
+          "name": "keyword.control.tp"
+        }
+      ]
+		},
+    "strings": {
+			"name": "string.quoted.double.tp",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+			]
+		},
+    "operators": {
+      "patterns": [
+        {
+          "match": "=",
+          "name": "keyword.operator.assignment.tp"
+        },
+        {
+          "match": "[*/+-]|\\b(MOD|DIV)\\b",
+          "name": "keyword.operator.arithmetic.tp"
+        },
+        {
+          "match": "(=(?<!:)|<=|>=|<>|<|>)",
+          "name": "keyword.operator.comparison.tp"
+        },
+        {
+          "match": "\\b(AND|NOT|OR)\\b",
+          "name": "keyword.operator.logical.tp"
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "match": "\\b(([0-9]+\\.?[0-9]*)|([0-9]+\\.?[0-9]*)((e|E)(\\+|-)?[0-9]+)?)\\b",
+          "name": "constant.numeric.tp"
+        },
+        {
+          "match": "\\b(ON|OFF)\\b",
+          "name": "constant.language.tp"
+        }
+      ]
+    },
+    "variable-types": {
+      "patterns": [
+        {
+          "captures": {
+            "1": {
+              "name": "storage.type.tp"
+            }
+          },
+          "match": "\\b(R|P|PR|[DGR][IO]|F)(\\[)"
+        }
+      ]
+    },
+    "variable-modifiers": {
+      "patterns": [
+        {
+          "match": "\\b(const|CONST|task|TASK|inout|INOUT)\\b",
+          "name": "storage.modifier.tp"
+        },
+        {
+          "captures": {
+            "1": {
+              "name": "punctuation.separator.variable-access.tp"
+            },
+            "2": {
+              "name": "variable.other.dot-access.tp"
+            }
+          },
+          "match": "(\\.)([a-zA-Z_][a-zA-Z_0-9]*)\\b(?!\\s*\\()"
+        }
+      ]
+    }
+  }
+}

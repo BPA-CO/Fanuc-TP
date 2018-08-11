@@ -1,0 +1,37 @@
+'.source.tp':
+  'if':
+    'prefix': 'if'
+    'body': """
+    IF ${1:TRUE} THEN
+      ${2:! Code}
+    ENDIF
+    """
+
+  'for':
+    'prefix': 'for'
+    'body': """
+    FOR ${1:idx} FROM ${2:1} TO ${3:6} STEP ${4:1} DO
+      ${5:! Code}
+    ENDFOR
+    """
+
+  'while':
+    'prefix': 'while'
+    'body': """
+    WHILE ${1:TRUE} DO
+      ${2:! Code}
+    ENDWHILE
+    """
+
+  'test':
+    'prefix': 'test'
+    'body': """
+    TEST ${1:VAR}
+      CASE ${2:1}:
+        ${3:! Code}
+      CASE ${4:2}:
+        ${5:! Code}
+      DEFAULT:
+        ${6:! Code}
+    ENDTEST
+    """

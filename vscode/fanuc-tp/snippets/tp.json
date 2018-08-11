@@ -1,0 +1,43 @@
+{
+  "If Statement": {
+    "prefix": "if",
+    "body": [
+        "IF ${1:TRUE} THEN",
+        "\t${2:! Code}",
+        "ENDIF"
+    ],
+    "description": "If Statement"
+  },
+  "For Loop": {
+    "prefix": "for",
+    "body": [
+        "FOR ${1:idx} FROM ${2:1} TO ${3:6} STEP ${4:1} DO",
+        "\t${5:! Code}",
+        "ENDFOR"
+    ],
+    "description": "For Loop"
+  },
+  "While Loop": {
+    "prefix": "while",
+    "body": [
+        "WHILE ${1:TRUE} DO",
+        "\t${2:! Code}",
+        "ENDWHILE"
+    ],
+    "description": "While Loop"
+  },
+  "Test statement": {
+    "prefix": "test",
+    "body": [
+        "TEST ${1:VAR}",
+        "\tCASE ${2:1}:",
+        "\t\t${3:! Code}",
+        "\tCASE ${4:2}:",
+        "\t\t${5:! Code}",
+        "\tDEFAULT:",
+        "\t\t${6:! Code}",
+        "ENDTEST"
+    ],
+    "description": "Test statement"
+  }
+}

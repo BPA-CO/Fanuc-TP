@@ -1,0 +1,34 @@
+{
+    "name": "fanuc-tp",
+    "displayName": "Fanuc TP",
+    "description": "TP language support for Fanuc industrial robots.",
+    "version": "0.0.1",
+    "publisher": "benlsheets",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "activationEvents": [
+        "onLanguage:tp"
+    ],
+    "main": "./bin/extension",
+    "contributes": {
+        "languages": [{
+            "id": "tp",
+            "aliases": ["TP", "tp"],
+            "extensions": [".ls",".tp"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "tp",
+            "scopeName": "source.tp",
+            "path": "./syntaxes/tp.tmLanguage.json"
+        }],
+        "snippets": [{
+            "language": "tp",
+            "path": "./snippets/tp.json"
+        }]
+    }
+}

@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/5t/p5kb5bgn75g6k3dw43l9lddw0000gn/T/d-116827-1103-efsma8/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/5t/p5kb5bgn75g6k3dw43l9lddw0000gn/T/d-116827-1103-efsma8/package.tgz",
+        "spec": "/private/var/folders/5t/p5kb5bgn75g6k3dw43l9lddw0000gn/T/d-116827-1103-efsma8/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/5t/p5kb5bgn75g6k3dw43l9lddw0000gn/T/apm-install-dir-116827-1103-1qnmyvj"
+    ]
+  ],
+  "_from": "../d-116827-1103-efsma8/package.tgz",
+  "_id": "language-tp@0.2.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/language-tp",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/5t/p5kb5bgn75g6k3dw43l9lddw0000gn/T/d-116827-1103-efsma8/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/5t/p5kb5bgn75g6k3dw43l9lddw0000gn/T/d-116827-1103-efsma8/package.tgz",
+    "spec": "/private/var/folders/5t/p5kb5bgn75g6k3dw43l9lddw0000gn/T/d-116827-1103-efsma8/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-116827-1103-efsma8/package.tgz",
+  "_shasum": "fdbe20abbd58fc9637df7d90a752b6ddbf476c48",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/5t/p5kb5bgn75g6k3dw43l9lddw0000gn/T/d-116827-1103-efsma8/package.tgz",
+  "_where": "/private/var/folders/5t/p5kb5bgn75g6k3dw43l9lddw0000gn/T/apm-install-dir-116827-1103-1qnmyvj",
+  "activationCommands": {
+    "atom-workspace": "language-tp:toggle"
+  },
+  "bugs": {
+    "url": "https://github.com/benlsheets/language-tp/issues"
+  },
+  "dependencies": {},
+  "description": "Atom support for the Fanuc TP language",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/benlsheets/language-tp#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "./lib/language-tp",
+  "name": "language-tp",
+  "optionalDependencies": {},
+  "readme": "# language-tp package\n\nProvides a grammar for working with the TP language used by Fanuc industrial robots.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benlsheets/language-tp.git"
+  },
+  "version": "0.2.0"
+}
