@@ -21,7 +21,12 @@
       "include": "#variable-modifiers"
     },
     {
-      "begin": "!",
+      "begin": "//",
+      "end": "\\n",
+      "name": "comment.line.tp"
+    },
+    {
+      "begin": "\\s\\s!",
       "end": "\\n",
       "name": "comment.line.tp"
     }
@@ -65,7 +70,7 @@
           "name": "keyword.operator.assignment.tp"
         },
         {
-          "match": "[*/+-]|\\b(MOD|DIV)\\b",
+          "match": "[*+-]|/(?!/)|\\b(MOD|DIV)\\b",
           "name": "keyword.operator.arithmetic.tp"
         },
         {
@@ -104,10 +109,6 @@
     },
     "variable-modifiers": {
       "patterns": [
-        {
-          "match": "\\b(const|CONST|task|TASK|inout|INOUT)\\b",
-          "name": "storage.modifier.tp"
-        },
         {
           "captures": {
             "1": {
